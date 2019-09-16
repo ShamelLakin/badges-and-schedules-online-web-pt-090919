@@ -15,11 +15,11 @@ batch_badge_creator(attendees)
 
 def assign_rooms(attendees)
    attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-   hash = Hash.new
+   assign_rooms = Hash.new
 %w(attendees).each_with_index { |item, index|
   hash[item] = index
 }
-   puts "Hello, #{attendees}! You'll be assigned to room #{}!"
+   puts "Hello, #{attendees}! You'll be assigned to room #{room_assignment}!"
   end
 end
 assign_rooms(attendees)
